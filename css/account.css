@@ -2746,11 +2746,11 @@ background: #FF584E;
 background-image:url(../svg/alert_error.svg);
 }
 
-@supports not ((-webkit-backdrop-filter: none) or not (backdrop-filter: none)) {
+/* @supports not ((-webkit-backdrop-filter: none) or not (backdrop-filter: none)) {
 	.item_alert_info {
 	background: rgba(64, 198, 240, 1);
 	}
-}
+} */
 
 .loading {
 opacity:0.5;
@@ -2810,14 +2810,14 @@ margin-bottom:20px;
 .content_menu li a {
 display:flex;
 align-items:flex-start;
-border-radius: 20px;
-padding:20px 20px 10px 20px;
+/* border-radius: 20px;
+padding:20px 20px 10px 20px; */
 }
-.content_menu li:hover a,
+/* .content_menu li:hover a,
 .content_menu li.active a {
 background: #FFFFFF;
 box-shadow: 0px 15px 70px #DBE9F6;
-}
+} */
 .content_menu .icon {
 width:64px;
 min-width:64px;
