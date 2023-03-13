@@ -12,13 +12,10 @@
 	<title>Passimpay Account</title>
 
 
-	<base href="./" />
-
-
-	<link href="css/account.css" rel="stylesheet" />
-	<link href="css/account-custom.css" rel="stylesheet" />
-	<link href="css/account-media.css" rel="stylesheet" />
-	<link href="css/account-new.css" rel="stylesheet" />
+	<link href="/web/css/account.css" rel="stylesheet" />
+	<link href="/web/css/account-custom.css" rel="stylesheet" />
+	<link href="/web/css/account-media.css" rel="stylesheet" />
+	<link href="/web/css/account-new.css" rel="stylesheet" />
 
 
 
@@ -2180,7 +2177,7 @@
 								</div>
 							</div>
 							<div class="chart-transaction__chart">
-								<img src="img/chart.svg" alt="">
+								<img src="/web/img/chart.svg" alt="">
 							</div>
 						</div>
 					</div>	
@@ -2312,22 +2309,19 @@
 											</div>
 										</td>
 									</tr>
-									
 									<tr>
 										<td class="spacer" colspan="7"></td>
 									</tr>
-									<tr class="border open_transaction slide-table" data-id="505" data-type="enter">
+									<tr class="bg open_transaction slide-table" data-id="506" data-type="enter">
 										<td>
-											<div class="fs-14 color-gray">505</div>
-										</td>
-										<td>
-											<div class="history_type">
-												<img src="svg/icon_type_deposit.svg" alt="">
-												<b class="fs-14">Пополнение</b>
+											<div class="fs-14 color-gray">23/03/2022 <br>
+												(19:31:21)
 											</div>
 										</td>
 										<td>
-											<div class="fs-14 color-gray">03.02.2023 <br>(15:50:02)</div>
+											<div class="fs-14 color-gray fw-500">AB-03070QF8 <br>
+												<span class="fs-12">easybit.com</span>
+											</div>
 										</td>
 										<td>
 											<div class="flex_start_center">
@@ -2337,38 +2331,77 @@
 														<img src="svg/currency/trc20.svg" alt="">
 													</div>
 												</div>
-												<div class="fs-14 fw-500">USDT TRC20</div>
+												<div class="fs-14 fw-500">BTC</div>
 											</div>
 										</td>
-										<td class="white-space-nowrap tar">
-											<div class="wrp_trans_enter">
-												<div class="fs-14 color-green"><b><span class="whb"><span class="hb">+
-																0.21</span></span> USDT</b></div>
-												<div class="fs-12 color-gray"><span class="whb"><span class="hb">+
-															0.21</span></span> USD</div>
+										<td>
+											<div class="fs-14 fw-500">1000.00 USDT<br>
+												<span class="fs-12 color-gray">$ 1000</span>
 											</div>
 										</td>
-										<td class="tar">
+										<td class="white-space-nowrap">
+											<div class="fs-14 fw-500">1000.00 USDT<br>
+												<span class="fs-12 color-gray">$ 1000</span>
+											</div>
+										</td>
+										<td >
+											<div class="fs-14 fw-500 color-gray word-wrap">0x3eb701b977887c66f261b712594093fb6492085a
+											</div>
+										</td>
+										<td>
 											<div class="history_status hs2"><img src="svg/history_status2.svg" alt="">
 												Завершено
+											</div>
+										</td>
+									</tr>
+
+									<tr class="table-slide">
+										<td>
+											<div class="table-slide__title fs-16 fw-700 mb-5">Номер заказа</div>
+											<div class="table-slide__text fs-14 color-gray">Нет номера</div>
+										</td>
+										<td>
+											<div class="table-slide__title fs-16 fw-700 mb-5">
+												Почта покупателя
+											</div>
+											<div class="table-slide__text fs-14 color-gray">Нет номера</div>
+										</td>
+										<td colspan="2">
+											<div class="table-slide__title fs-16 fw-700 mb-5">Комиссия сети
+												<div class="hint__img" data-tooltip="1.00 USDT - комиссионный сбор, который оплачивает покупатель.
+												Данный сбор необходим для отправки
+												средств с транзитного адреса на ваш
+												основной адрес.">
+													<svg width="14"  height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M7 0.25708C10.8689 0.25708 14 3.38783 14 7.25708C14 11.1259 10.8692 14.2571 7 14.2571C3.13111 14.2571 0 11.1263 0 7.25708C0 3.38824 3.13075 0.25708 7 0.25708ZM6.28116 10.0358C6.28116 10.2569 6.60365 10.478 6.99986 10.478C7.4145 10.478 7.70932 10.2569 7.70932 10.0358V6.5252C7.70932 6.26721 7.41448 6.0921 6.99986 6.0921C6.60365 6.0921 6.28116 6.26721 6.28116 6.5252V10.0358ZM6.99984 5.24447C7.42369 5.24447 7.75537 4.93119 7.75537 4.58103C7.75537 4.23089 7.42366 3.92683 6.99984 3.92683C6.5852 3.92683 6.25346 4.23089 6.25346 4.58103C6.25346 4.93119 6.58522 5.24447 6.99984 5.24447Z" fill="#9FA8B1"/>
+													</svg>
+												</div>
+											</div>
+											<div class="table-slide__title fs-14 fw-700 mb-5">1.00 USDT
+												</div>
+											<div class="table-slide__text fs-14 color-gray">$ 1.00</div>
+										</td>
+										<td colspan="3">
+											<div class="table-slide__title fs-16 fw-700 mb-5">Ссылка на счет</div>
+											<div class="table-slide__text fs-14 copy-text">
+												<div class="copy_text">OM04QQF8</div>
+												
 											</div>
 										</td>
 									</tr>
 									<tr>
 										<td class="spacer" colspan="7"></td>
 									</tr>
-									<tr class="bg open_transaction slide-table" data-id="496" data-type="enter">
+									<tr class="bg open_transaction slide-table" data-id="506" data-type="enter">
 										<td>
-											<div class="fs-14 color-gray">496</div>
-										</td>
-										<td>
-											<div class="history_type">
-												<img src="svg/icon_type_deposit.svg" alt="">
-												<b class="fs-14">Пополнение</b>
+											<div class="fs-14 color-gray">23/03/2022 <br>
+												(19:31:21)
 											</div>
 										</td>
 										<td>
-											<div class="fs-14 color-gray">03.02.2023 <br>(06:30:05)</div>
+											<div class="fs-14 color-gray fw-500">AB-03070QF8 <br>
+												<span class="fs-12">easybit.com</span>
+											</div>
 										</td>
 										<td>
 											<div class="flex_start_center">
@@ -2378,38 +2411,77 @@
 														<img src="svg/currency/trc20.svg" alt="">
 													</div>
 												</div>
-												<div class="fs-14 fw-500">USDT TRC20</div>
+												<div class="fs-14 fw-500">BTC</div>
 											</div>
 										</td>
-										<td class="white-space-nowrap tar">
-											<div class="wrp_trans_enter">
-												<div class="fs-14 color-green"><b><span class="whb"><span class="hb">+
-																0.00</span></span> USDT</b></div>
-												<div class="fs-12 color-gray"><span class="whb"><span class="hb">+
-															0.00</span></span> USD</div>
+										<td>
+											<div class="fs-14 fw-500">1000.00 USDT<br>
+												<span class="fs-12 color-gray">$ 1000</span>
 											</div>
 										</td>
-										<td class="tar">
+										<td class="white-space-nowrap">
+											<div class="fs-14 fw-500">1000.00 USDT<br>
+												<span class="fs-12 color-gray">$ 1000</span>
+											</div>
+										</td>
+										<td >
+											<div class="fs-14 fw-500 color-gray word-wrap">0x3eb701b977887c66f261b712594093fb6492085a
+											</div>
+										</td>
+										<td>
 											<div class="history_status hs2"><img src="svg/history_status2.svg" alt="">
 												Завершено
+											</div>
+										</td>
+									</tr>
+
+									<tr class="table-slide">
+										<td>
+											<div class="table-slide__title fs-16 fw-700 mb-5">Номер заказа</div>
+											<div class="table-slide__text fs-14 color-gray">Нет номера</div>
+										</td>
+										<td>
+											<div class="table-slide__title fs-16 fw-700 mb-5">
+												Почта покупателя
+											</div>
+											<div class="table-slide__text fs-14 color-gray">Нет номера</div>
+										</td>
+										<td colspan="2">
+											<div class="table-slide__title fs-16 fw-700 mb-5">Комиссия сети
+												<div class="hint__img" data-tooltip="1.00 USDT - комиссионный сбор, который оплачивает покупатель.
+												Данный сбор необходим для отправки
+												средств с транзитного адреса на ваш
+												основной адрес.">
+													<svg width="14"  height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M7 0.25708C10.8689 0.25708 14 3.38783 14 7.25708C14 11.1259 10.8692 14.2571 7 14.2571C3.13111 14.2571 0 11.1263 0 7.25708C0 3.38824 3.13075 0.25708 7 0.25708ZM6.28116 10.0358C6.28116 10.2569 6.60365 10.478 6.99986 10.478C7.4145 10.478 7.70932 10.2569 7.70932 10.0358V6.5252C7.70932 6.26721 7.41448 6.0921 6.99986 6.0921C6.60365 6.0921 6.28116 6.26721 6.28116 6.5252V10.0358ZM6.99984 5.24447C7.42369 5.24447 7.75537 4.93119 7.75537 4.58103C7.75537 4.23089 7.42366 3.92683 6.99984 3.92683C6.5852 3.92683 6.25346 4.23089 6.25346 4.58103C6.25346 4.93119 6.58522 5.24447 6.99984 5.24447Z" fill="#9FA8B1"/>
+													</svg>
+												</div>
+											</div>
+											<div class="table-slide__title fs-14 fw-700 mb-5">1.00 USDT
+												</div>
+											<div class="table-slide__text fs-14 color-gray">$ 1.00</div>
+										</td>
+										<td colspan="3">
+											<div class="table-slide__title fs-16 fw-700 mb-5">Ссылка на счет</div>
+											<div class="table-slide__text fs-14 copy-text">
+												<div class="copy_text">OM04QQF8</div>
+												
 											</div>
 										</td>
 									</tr>
 									<tr>
 										<td class="spacer" colspan="7"></td>
 									</tr>
-									<tr class="border open_transaction slide-table" data-id="483" data-type="enter">
+									<tr class="bg open_transaction slide-table" data-id="506" data-type="enter">
 										<td>
-											<div class="fs-14 color-gray">483</div>
-										</td>
-										<td>
-											<div class="history_type">
-												<img src="svg/icon_type_deposit.svg" alt="">
-												<b class="fs-14">Пополнение</b>
+											<div class="fs-14 color-gray">23/03/2022 <br>
+												(19:31:21)
 											</div>
 										</td>
 										<td>
-											<div class="fs-14 color-gray">02.02.2023 <br>(19:25:05)</div>
+											<div class="fs-14 color-gray fw-500">AB-03070QF8 <br>
+												<span class="fs-12">easybit.com</span>
+											</div>
 										</td>
 										<td>
 											<div class="flex_start_center">
@@ -2419,38 +2491,77 @@
 														<img src="svg/currency/trc20.svg" alt="">
 													</div>
 												</div>
-												<div class="fs-14 fw-500">USDT TRC20</div>
+												<div class="fs-14 fw-500">BTC</div>
 											</div>
 										</td>
-										<td class="white-space-nowrap tar">
-											<div class="wrp_trans_enter">
-												<div class="fs-14 color-green"><b><span class="whb"><span class="hb">+
-																1.00</span></span> USDT</b></div>
-												<div class="fs-12 color-gray"><span class="whb"><span class="hb">+
-															1.00</span></span> USD</div>
+										<td>
+											<div class="fs-14 fw-500">1000.00 USDT<br>
+												<span class="fs-12 color-gray">$ 1000</span>
 											</div>
 										</td>
-										<td class="tar">
+										<td class="white-space-nowrap">
+											<div class="fs-14 fw-500">1000.00 USDT<br>
+												<span class="fs-12 color-gray">$ 1000</span>
+											</div>
+										</td>
+										<td >
+											<div class="fs-14 fw-500 color-gray word-wrap">0x3eb701b977887c66f261b712594093fb6492085a
+											</div>
+										</td>
+										<td>
 											<div class="history_status hs2"><img src="svg/history_status2.svg" alt="">
 												Завершено
+											</div>
+										</td>
+									</tr>
+
+									<tr class="table-slide">
+										<td>
+											<div class="table-slide__title fs-16 fw-700 mb-5">Номер заказа</div>
+											<div class="table-slide__text fs-14 color-gray">Нет номера</div>
+										</td>
+										<td>
+											<div class="table-slide__title fs-16 fw-700 mb-5">
+												Почта покупателя
+											</div>
+											<div class="table-slide__text fs-14 color-gray">Нет номера</div>
+										</td>
+										<td colspan="2">
+											<div class="table-slide__title fs-16 fw-700 mb-5">Комиссия сети
+												<div class="hint__img" data-tooltip="1.00 USDT - комиссионный сбор, который оплачивает покупатель.
+												Данный сбор необходим для отправки
+												средств с транзитного адреса на ваш
+												основной адрес.">
+													<svg width="14"  height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M7 0.25708C10.8689 0.25708 14 3.38783 14 7.25708C14 11.1259 10.8692 14.2571 7 14.2571C3.13111 14.2571 0 11.1263 0 7.25708C0 3.38824 3.13075 0.25708 7 0.25708ZM6.28116 10.0358C6.28116 10.2569 6.60365 10.478 6.99986 10.478C7.4145 10.478 7.70932 10.2569 7.70932 10.0358V6.5252C7.70932 6.26721 7.41448 6.0921 6.99986 6.0921C6.60365 6.0921 6.28116 6.26721 6.28116 6.5252V10.0358ZM6.99984 5.24447C7.42369 5.24447 7.75537 4.93119 7.75537 4.58103C7.75537 4.23089 7.42366 3.92683 6.99984 3.92683C6.5852 3.92683 6.25346 4.23089 6.25346 4.58103C6.25346 4.93119 6.58522 5.24447 6.99984 5.24447Z" fill="#9FA8B1"/>
+													</svg>
+												</div>
+											</div>
+											<div class="table-slide__title fs-14 fw-700 mb-5">1.00 USDT
+												</div>
+											<div class="table-slide__text fs-14 color-gray">$ 1.00</div>
+										</td>
+										<td colspan="3">
+											<div class="table-slide__title fs-16 fw-700 mb-5">Ссылка на счет</div>
+											<div class="table-slide__text fs-14 copy-text">
+												<div class="copy_text">OM04QQF8</div>
+												
 											</div>
 										</td>
 									</tr>
 									<tr>
 										<td class="spacer" colspan="7"></td>
 									</tr>
-									<tr class="bg open_transaction slide-table" data-id="482" data-type="enter">
+									<tr class="bg open_transaction slide-table" data-id="506" data-type="enter">
 										<td>
-											<div class="fs-14 color-gray">482</div>
-										</td>
-										<td>
-											<div class="history_type">
-												<img src="svg/icon_type_deposit.svg" alt="">
-												<b class="fs-14">Пополнение</b>
+											<div class="fs-14 color-gray">23/03/2022 <br>
+												(19:31:21)
 											</div>
 										</td>
 										<td>
-											<div class="fs-14 color-gray">02.02.2023 <br>(19:23:02)</div>
+											<div class="fs-14 color-gray fw-500">AB-03070QF8 <br>
+												<span class="fs-12">easybit.com</span>
+											</div>
 										</td>
 										<td>
 											<div class="flex_start_center">
@@ -2460,20 +2571,61 @@
 														<img src="svg/currency/trc20.svg" alt="">
 													</div>
 												</div>
-												<div class="fs-14 fw-500">USDT TRC20</div>
+												<div class="fs-14 fw-500">BTC</div>
 											</div>
 										</td>
-										<td class="white-space-nowrap tar">
-											<div class="wrp_trans_enter">
-												<div class="fs-14 color-green"><b><span class="whb"><span class="hb">+
-																1.00</span></span> USDT</b></div>
-												<div class="fs-12 color-gray"><span class="whb"><span class="hb">+
-															1.00</span></span> USD</div>
+										<td>
+											<div class="fs-14 fw-500">1000.00 USDT<br>
+												<span class="fs-12 color-gray">$ 1000</span>
 											</div>
 										</td>
-										<td class="tar">
+										<td class="white-space-nowrap">
+											<div class="fs-14 fw-500">1000.00 USDT<br>
+												<span class="fs-12 color-gray">$ 1000</span>
+											</div>
+										</td>
+										<td >
+											<div class="fs-14 fw-500 color-gray word-wrap">0x3eb701b977887c66f261b712594093fb6492085a
+											</div>
+										</td>
+										<td>
 											<div class="history_status hs2"><img src="svg/history_status2.svg" alt="">
 												Завершено
+											</div>
+										</td>
+									</tr>
+
+									<tr class="table-slide">
+										<td>
+											<div class="table-slide__title fs-16 fw-700 mb-5">Номер заказа</div>
+											<div class="table-slide__text fs-14 color-gray">Нет номера</div>
+										</td>
+										<td>
+											<div class="table-slide__title fs-16 fw-700 mb-5">
+												Почта покупателя
+											</div>
+											<div class="table-slide__text fs-14 color-gray">Нет номера</div>
+										</td>
+										<td colspan="2">
+											<div class="table-slide__title fs-16 fw-700 mb-5">Комиссия сети
+												<div class="hint__img" data-tooltip="1.00 USDT - комиссионный сбор, который оплачивает покупатель.
+												Данный сбор необходим для отправки
+												средств с транзитного адреса на ваш
+												основной адрес.">
+													<svg width="14"  height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M7 0.25708C10.8689 0.25708 14 3.38783 14 7.25708C14 11.1259 10.8692 14.2571 7 14.2571C3.13111 14.2571 0 11.1263 0 7.25708C0 3.38824 3.13075 0.25708 7 0.25708ZM6.28116 10.0358C6.28116 10.2569 6.60365 10.478 6.99986 10.478C7.4145 10.478 7.70932 10.2569 7.70932 10.0358V6.5252C7.70932 6.26721 7.41448 6.0921 6.99986 6.0921C6.60365 6.0921 6.28116 6.26721 6.28116 6.5252V10.0358ZM6.99984 5.24447C7.42369 5.24447 7.75537 4.93119 7.75537 4.58103C7.75537 4.23089 7.42366 3.92683 6.99984 3.92683C6.5852 3.92683 6.25346 4.23089 6.25346 4.58103C6.25346 4.93119 6.58522 5.24447 6.99984 5.24447Z" fill="#9FA8B1"/>
+													</svg>
+												</div>
+											</div>
+											<div class="table-slide__title fs-14 fw-700 mb-5">1.00 USDT
+												</div>
+											<div class="table-slide__text fs-14 color-gray">$ 1.00</div>
+										</td>
+										<td colspan="3">
+											<div class="table-slide__title fs-16 fw-700 mb-5">Ссылка на счет</div>
+											<div class="table-slide__text fs-14 copy-text">
+												<div class="copy_text">OM04QQF8</div>
+												
 											</div>
 										</td>
 									</tr>
@@ -2908,11 +3060,11 @@
 		</div>
 	</div>
 
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery-ui.min.js"></script>
-	<script src="js/dashboard-popup.js"></script>
-	<script src="js/swiper-bundle.min.js"></script>
-	<script src="js/transaction.js"></script>
+	<script src="/web/js/jquery.min.js"></script>
+	<script src="/web/js/jquery-ui.min.js"></script>
+	<script src="/web/js/dashboard-popup.js"></script>
+	<script src="/web/js/swiper-bundle.min.js"></script>
+	<script src="/web/js/transaction.js"></script>
 
 
 </body>
