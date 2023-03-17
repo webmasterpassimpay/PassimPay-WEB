@@ -35,12 +35,10 @@ if (isMobile.any()) {
 
 
 
-
-if (document.querySelector('.module__cms')) {
+/* открывает блоки в Module for CMS */
+if (document.querySelector('.module__cms') && document.querySelector('._touch')) {
    const moduleCmsShell = document.querySelectorAll('.module__cms-shell');
-
    document.body.addEventListener('click', function (event) {
-
       if (event.target.closest('.module__cms-shell')) {
          moduleCmsShell.forEach(e => {
             if (e == event.target.closest('.module__cms-shell')) {
@@ -48,12 +46,35 @@ if (document.querySelector('.module__cms')) {
             } else {
                e.classList.remove('module__cms-shell_activ');
             }
-
+         })
+      } else {
+         moduleCmsShell.forEach(e => {
+            e.classList.remove('module__cms-shell_activ');
          })
       }
    })
 }
 
+
+/* открывает блоки в Questions */
+if (document.querySelector('.module__questions')) {
+   const moduleQuestion = document.querySelectorAll('.module__question');
+   document.body.addEventListener('click', function (event) {
+      if (event.target.closest('.module__question')) {
+         moduleQuestion.forEach(e => {
+            if (e == event.target.closest('.module__question')) {
+               e.classList.toggle('module__question-active');
+            } else {
+               e.classList.remove('module__question-active');
+            }
+         })
+      } else {
+         moduleQuestion.forEach(e => {
+            e.classList.remove('module__question-active');
+         })
+      }
+   })
+}
 
 
 
