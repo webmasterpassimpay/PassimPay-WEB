@@ -3577,6 +3577,19 @@
 				}
 			});
 		});
+		$('.datepicker').datepicker({
+			range: 'period', 
+			numberOfMonths: 1,
+			onSelect: function(dateText, inst, extensionRange) {
+				$('.datepicker').val(extensionRange.startDateText + ' - ' + extensionRange.endDateText);
+				if (extensionRange.step == 0) {
+					table.find('[name="start"]').val(0);
+					chartOperations();
+					historyOperations();
+					$('.ui-datepicker').hide();
+				}
+			}
+		}, $.datepicker.regional["ru"]);
 	</script>
 
 	<div id="listpartner" class="modal">
